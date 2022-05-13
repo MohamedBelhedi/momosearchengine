@@ -1,0 +1,24 @@
+*{
+    flex-wrap: wrap;
+    margin:20px;
+}
+body{
+    height: 20vh;
+    margin:20px;
+    
+
+} 
+img{
+    height: 100%;
+    justify-content:space-between
+}
+.searchengien{
+    height: 100%;
+    justify-content:space-between
+
+}
+#search,#select{
+    border-radius: 20px;
+    box-shadow: 5px 6px 8px gray;
+    width:250px
+}
