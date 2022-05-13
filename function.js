@@ -1,7 +1,8 @@
 const input=document.querySelector("#search")
 const body=document.querySelector('body')
 
-const btn=document.querySelector('.btn')
+const btn=document.querySelector('.los')
+const select=document.querySelector('#select')
 const color=document.querySelector('#color')
 const datumzeit=document.querySelector(".datumzeit")
 
@@ -27,7 +28,7 @@ const searchEn2=document.querySelector('.option2')
 const searchE3=document.querySelector('.option3')
 
     
-
+    if(searchEn1.value==='google'){
     searchEn1.addEventListener("click",()=>{
         const Input=input.value
         console.log("hi")
@@ -37,6 +38,7 @@ const searchE3=document.querySelector('.option3')
 input.value=''
 location.reload();
 })
+    }
    
 
 searchEn2.addEventListener("click",()=>{
