@@ -12,6 +12,7 @@ img{
     
     border-radius: 3em;
     justify-content:space-betwen;
+    box-shadow: 5px 6px 8px rgb(238, 233, 162) ;
 }
 .searchengien{
     height: 100%;
@@ -41,6 +42,7 @@ img{
         margin-left:10;
         justify-content:space-between;
         flex-wrap:center;
+        position: relative;
     }
     .searchengien{
         height: 100%;
