@@ -9,16 +9,42 @@ body{
 
 } 
 img{
-    height: 100%;
-    justify-content:space-between
+    
+    border-radius: 3em;
+    justify-content:space-betwen;
 }
 .searchengien{
     height: 100%;
-    justify-content:space-between
+    justify-content:space-between;
 
 }
 #search,#select{
     border-radius: 20px;
     box-shadow: 5px 6px 8px gray;
     width:250px
+}
+@media screen and (max-width:954px) {
+    *{
+        flex-wrap: wrap;
+        margin:30px;
+    }
+    body{
+        height: 80vh;
+        margin:0;
+       
+        
+    
+    } 
+    img{
+        height:20px;
+        width:300px;
+        margin-left:10;
+        justify-content:space-between;
+        flex-wrap:center;
+    }
+    .searchengien{
+        height: 100%;
+        justify-content:space-between
+    
+    }
 }
