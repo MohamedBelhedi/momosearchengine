@@ -19,8 +19,28 @@ datumzeit.innerText=date
 
 color.addEventListener("input",()=>{
     body.style.background=color.value
+    localStorage.setItem('storedValue',color.value);
+
 
 })
+if(localStorage.storedValue) {
+
+
+    
+        color.value = localStorage.storedValue;
+        body.style.background=localStorage.storedValue;
+        let speicher=localStorage.getItem(localStorage.storedValue)
+        body.addEventListener("DomContentLoaded",()=>{
+
+            body.style.background=speicher
+        })
+       
+
+}
+
+
+
+
 
 
 const searchEn1=document.querySelector('.option1')
@@ -29,7 +49,7 @@ const searchE3=document.querySelector('.option3')
 
     
     if(searchEn1.value==='google'){
-    searchEn1.addEventListener("click",()=>{
+    searchEn1.addEventListener("select",()=>{
         const Input=input.value
         console.log("hi")
         
