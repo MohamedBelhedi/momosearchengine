@@ -39,7 +39,8 @@ img{
     img{
         height:20px;
         width:300px;
-        margin-left:10;
+        border-image: round;
+        margin-left:0;
         justify-content:space-between;
         flex-wrap:center;
         position: relative;

@@ -18,7 +18,7 @@ datumzeit.innerText=date
 // const inputVal1='google'
 
 color.addEventListener("input",()=>{
-    body.style.background=color.value
+    body.style.background=color.value /*damit die Farbe Live gewechselt werden kann*/
     localStorage.setItem('storedValue',color.value);
 
 
@@ -27,7 +27,7 @@ if(localStorage.storedValue) {
 
 
     
-        color.value = localStorage.storedValue;
+        // color.value = localStorage.storedValue;
         body.style.background=localStorage.storedValue;
         let speicher=localStorage.getItem(localStorage.storedValue)
         body.addEventListener("DomContentLoaded",()=>{
@@ -48,8 +48,8 @@ const searchEn2=document.querySelector('.option2')
 const searchE3=document.querySelector('.option3')
 
     
-    if(searchEn1.value==='google'){
-    searchEn1.addEventListener("select",()=>{
+   
+    searchEn1.addEventListener("click",()=>{
         const Input=input.value
         console.log("hi")
         
@@ -58,7 +58,7 @@ const searchE3=document.querySelector('.option3')
 input.value=''
 location.reload();
 })
-    }
+   
    
 
 searchEn2.addEventListener("click",()=>{
