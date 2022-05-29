@@ -53,6 +53,10 @@ img{
         justify-content:space-between
     
     }
+    .option1,.option2,.option3{
+        margin:5px;
+        justify-content:center;
+    }
 }
 
 

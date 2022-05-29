@@ -6,9 +6,16 @@ const select=document.querySelector('#select')
 const color=document.querySelector('#color')
 const datumzeit=document.querySelector(".datumzeit")
 
-const date=new Date()
+const Zeit=()=>{
+    const date=new Date()
 
-datumzeit.innerText=date
+    datumzeit.innerText=date
+
+    setInterval(Zeit, 1000)
+
+}
+
+
 
 // const color1=color.value
 
@@ -85,7 +92,7 @@ location.reload();
 
 
 
-
+Zeit();
 
 
         
