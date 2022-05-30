@@ -59,11 +59,11 @@ const searchE3=document.querySelector('.option3')
     searchEn1.addEventListener("click",()=>{
         const Input=input.value
         console.log("hi")
-        
+       ErrorPage();
         window.open("https://www.google.de/search?q="+`${Input}`)
     
-input.value=''
-location.reload();
+// input.value=''
+// location.reload();
 })
    
    
@@ -88,11 +88,77 @@ searchE3.addEventListener("click",()=>{
 // location.reload();
 })
 
+function ErrorPage(){
+    const input1=document.querySelector("#search").value
+    const badWordArry=["hurensohn",
+    "scheiße",
+    "scheiss",
+    "scheisse",
+    "kinderporno",
+    "kinderpornos",
+    "sex",
+    "Hurensohn"
+    ,"Scheiße"
+    ,"Sex"
+    ,"Scheiss" 
+    , "Scheisse"
+    ,"Kinderpornos",
+    "Kinderporno",
+    "wixxer",
+    "Wixxer",
+    "Blowjob",
+    "blowjob",
+    "Milf",
+    "milf"
+
+]
+
+  
+    badWordArry.forEach((badWordArry)=>{
+      
+
+        if(input1.includes(badWordArry))
+        {
+    
+            // Swal.fire({
+            //     title: 'Do you want to save the changes?',
+               
+            //     showCancelButton: true,
+            //     confirmButtonText: 'Save',
+            //     denyButtonText: `Don't save`,
+            //   }).then((result) => {
+            //     /* Read more about isConfirmed, isDenied below */
+            //     if (result.isConfirmed) {
+            //       Swal.fire('Saved!', '', 'success')
+            //     } else if (result.isDenied) {
+            //       Swal.fire('Changes are not saved', '', 'info')
+            //     }
+            //   })
+            alert("Verbotene Worte")
+            window.open(false)
+            // return false
+    
+        }
+       
+
+
+    })
+    
+    
+   
+
+
+   
+
+
+
+}
 
 
 
 
 Zeit();
+
 
 
         
