@@ -17,12 +17,6 @@ const Zeit=()=>{
 
 
 
-// const color1=color.value
-
-
-
-// const searchEnval=searchEn.value
-// const inputVal1='google'
 
 color.addEventListener("input",()=>{
     body.style.background=color.value /*damit die Farbe Live gewechselt werden kann*/
@@ -34,7 +28,7 @@ if(localStorage.storedValue) {
 
 
     
-        // color.value = localStorage.storedValue;
+       
         body.style.background=localStorage.storedValue;
         let speicher=localStorage.getItem(localStorage.storedValue)
         body.addEventListener("DomContentLoaded",()=>{
@@ -61,9 +55,7 @@ const searchE3=document.querySelector('.option3')
         console.log("hi")
        ErrorPage();
         window.open("https://www.google.de/search?q="+`${Input}`)
-    
-// input.value=''
-// location.reload();
+
 })
    
    
@@ -74,8 +66,7 @@ searchEn2.addEventListener("click",()=>{
         ErrorPage();
         window.open("https://www.bing.com/search?q="+`${Input}`)
     
-// input.value=''
-// location.reload();
+
 })
 
 searchE3.addEventListener("click",()=>{
@@ -84,8 +75,7 @@ searchE3.addEventListener("click",()=>{
         ErrorPage();
         window.open("https://de.search.yahoo.com/search?p="+`${Input}`)
     
-// input.value=''
-// location.reload();
+
 })
 
 function ErrorPage(){
@@ -166,9 +156,7 @@ function ErrorPage(){
               })
               .then(location.open(false))
               
-            // alert("Verbotene Worte")
            
-            // return false
             
     
         }
