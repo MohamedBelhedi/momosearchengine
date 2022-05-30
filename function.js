@@ -137,6 +137,7 @@ function ErrorPage(){
             alert("Verbotene Worte")
             window.open(false)
             // return false
+            
     
         }
        
