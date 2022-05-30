@@ -146,7 +146,7 @@ function ErrorPage(){
    
           
            Swal.fire({
-                title: 'Na Na schlimme worte suchen wir nicht',
+                title: 'Na Na schlimme worte suchen wir nicht 🤬',
                
                 showCancelButton: false,
                 confirmButtonText: 'Ok',
@@ -156,10 +156,9 @@ function ErrorPage(){
                 /* Read more about isConfirmed, isDenied below */
                 if (result.isConfirmed) {
                    
-                    async()=>{
-                   await Swal.fire('Danke das du die Seite verlässt', '', 'success')
+                   Swal.fire('Wir bitten um Verständnis 😊', '', 'success')
                    
-                    }
+                    
                   
                    
             }
