@@ -71,7 +71,7 @@ const searchE3=document.querySelector('.option3')
 searchEn2.addEventListener("click",()=>{
         const Input=input.value
         console.log("hi")
-        
+        ErrorPage();
         window.open("https://www.bing.com/search?q="+`${Input}`)
     
 // input.value=''
@@ -81,7 +81,7 @@ searchEn2.addEventListener("click",()=>{
 searchE3.addEventListener("click",()=>{
         const Input=input.value
         console.log("hi")
-        
+        ErrorPage();
         window.open("https://de.search.yahoo.com/search?p="+`${Input}`)
     
 // input.value=''
@@ -94,22 +94,46 @@ function ErrorPage(){
     "scheiße",
     "scheiss",
     "scheisse",
+    "arschloch",
+    "Arschloch",
     "kinderporno",
+    "Kinderporno",
     "kinderpornos",
+    "Kinderpornos",
+    "Kindersex",
+    "kindersex",
+    "kindersexpuppen",
+    "kindersexpuppen",
     "sex",
-    "Hurensohn"
-    ,"Scheiße"
-    ,"Sex"
-    ,"Scheiss" 
-    , "Scheisse"
-    ,"Kinderpornos",
+    "Hurensohn",
+    "Scheiße",
+    "Sex",
+    "Scheiss" , 
+    "Scheisse",
+    "Kinderpornos",
     "Kinderporno",
     "wixxer",
     "Wixxer",
     "Blowjob",
     "blowjob",
     "Milf",
-    "milf"
+    "milf",
+    "gayporno",
+    "gayporn",
+    "Gayporn",
+    "Gayporno",
+    "lesbianporn",
+    "Lesbianporn",
+    "Porno",
+    "porno",
+    "porn",
+    "Porn",
+    "xhamster",
+    "Xhamster",
+    "youporn",
+    "Youporn",
+    "xnxx",
+    "Xnxx",
 
 ]
 
@@ -119,37 +143,46 @@ function ErrorPage(){
 
         if(input1.includes(badWordArry))
         {
-    
-            // Swal.fire({
-            //     title: 'Do you want to save the changes?',
+   
+          
+           Swal.fire({
+                title: 'Na Na schlimme worte suchen wir nicht',
                
-            //     showCancelButton: true,
-            //     confirmButtonText: 'Save',
-            //     denyButtonText: `Don't save`,
-            //   }).then((result) => {
-            //     /* Read more about isConfirmed, isDenied below */
-            //     if (result.isConfirmed) {
-            //       Swal.fire('Saved!', '', 'success')
-            //     } else if (result.isDenied) {
-            //       Swal.fire('Changes are not saved', '', 'info')
-            //     }
-            //   })
-            alert("Verbotene Worte")
-            window.open(false)
+                showCancelButton: false,
+                confirmButtonText: 'Ok',
+                denyButtonText: `abbrechen`,
+              }).then((result) => {
+                
+                /* Read more about isConfirmed, isDenied below */
+                if (result.isConfirmed) {
+                   
+                    async()=>{
+                   await Swal.fire('Danke das du die Seite verlässt', '', 'success')
+                   
+                    }
+                  
+                   
+            }
+          
+              })
+              .then(location.open(false))
+              
+            // alert("Verbotene Worte")
+           
             // return false
             
     
         }
        
 
-
+  
     })
     
     
    
 
 
-   
+
 
 
 
