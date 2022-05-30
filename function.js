@@ -74,18 +74,18 @@ searchEn2.addEventListener("click",()=>{
         
         window.open("https://www.bing.com/search?q="+`${Input}`)
     
-input.value=''
-location.reload();
+// input.value=''
+// location.reload();
 })
 
 searchE3.addEventListener("click",()=>{
         const Input=input.value
         console.log("hi")
         
-        window.open("https://de.search.yahoo.com/search?p"+`${Input}`)
+        window.open("https://de.search.yahoo.com/search?p="+`${Input}`)
     
-input.value=''
-location.reload();
+// input.value=''
+// location.reload();
 })
 
 
